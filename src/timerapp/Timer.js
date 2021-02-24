@@ -26,7 +26,7 @@ class Timer extends Component {
   };
 
   render() {
-    return <div>Seconds: {this.state.seconds}</div>;
+    return <div>Seconds Elasped: {this.state.seconds}</div>;
   }
 }
 
