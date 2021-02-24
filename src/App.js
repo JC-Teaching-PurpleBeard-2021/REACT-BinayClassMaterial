@@ -3,6 +3,8 @@ import AddEmployeeForm from "./AddEmployeeForm";
 import Table from "./Table";
 import Timer from "./timerapp/Timer";
 import TodoApp from "./todolist_app/TodoApp";
+import './App.css'
+import Theme from "./themeapp/Theme";
 
 class App extends Component {
   tableData = [
@@ -37,6 +39,8 @@ class App extends Component {
   render() {
     return (
       <div>
+        <h1>Switch Theme:</h1>
+        <Theme/>
         <h1>Table operation Application</h1>
         <Table
           td={this.state.tableData}
