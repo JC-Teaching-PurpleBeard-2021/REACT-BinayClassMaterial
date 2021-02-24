@@ -1,33 +1,14 @@
-import {Component} from 'react';
-class Timer extends Component {
-  state = {
-    seconds: 0,
-  };
+import { useState, useEffect } from "react";
 
-  interval = {};
-
-  //   tick = ()=> {
-  //     this.setState({
-  //         seconds: this.state.seconds+1
-  //     })
-  //   }
-  componentWillUnmount = ()=>{
-      clearInterval(this.interval)
-  }
-
-  componentDidMount = () => {
-    this.interval = setInterval(
-      () =>
-        this.setState({
-          seconds: this.state.seconds + 1,
-        }),
-      1000
-    );
-  };
-
-  render() {
-    return <div>Seconds Elasped: {this.state.seconds}</div>;
-  }
+export default function Timer() {
+  const [seconds, setSeconds] = useState(0);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setSeconds(seconds + 1);
+    }, 1000);
+    return()=>{
+      clearInterval(interval)
+    }
+  });
+  return <div>Seconds Elapsed: {seconds}</div>;
 }
-
-export default Timer
