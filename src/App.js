@@ -5,6 +5,7 @@ import Timer from "./timerapp/Timer";
 import TodoApp from "./todolist_app/TodoApp";
 import './App.css'
 import Theme from "./themeapp/Theme";
+import ModernTodo from "./modenTodoApp/modernToDoApp/ModernTodo";
 
 class App extends Component {
   tableData = [
@@ -53,6 +54,8 @@ class App extends Component {
         <br/>
         <h1>ToDo List App</h1>
         <TodoApp/>
+        <h1>Feature Rich ToDo App</h1>
+        <ModernTodo/>
       </div>
     );
   }
