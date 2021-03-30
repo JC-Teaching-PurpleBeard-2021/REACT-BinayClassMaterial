@@ -7,3 +7,6 @@
     background-color: white;
     color: black;
 }
+.task-item{
+    text-decoration: line-through;
+}
