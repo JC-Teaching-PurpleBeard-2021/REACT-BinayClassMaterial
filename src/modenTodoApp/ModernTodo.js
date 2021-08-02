@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import '../App.css';
+import '../App.scss';
 const ModernTodo = () => {
 	const [currentTask, setcurrentTask] = useState('');
 	const [tasks, settasks] = useState([]);

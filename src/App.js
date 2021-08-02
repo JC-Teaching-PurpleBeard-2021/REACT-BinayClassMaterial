@@ -3,7 +3,7 @@ import AddEmployeeForm from './AddEmployeeForm';
 import Table from './Table';
 import Timer from './timerapp/Timer';
 import TodoApp from './todolist_app/TodoApp';
-import './App.css';
+import './App.scss';
 import Theme from './themeapp/Theme';
 import ModernTodo from './modenTodoApp/ModernTodo';
 
