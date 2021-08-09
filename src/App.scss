@@ -1,12 +1,48 @@
-.blacktheme{
-    background-color: black;
-    color: white;
+.task-item {
+	text-decoration: line-through;
 }
 
-.whitetheme{
-    background-color: white;
-    color: black;
+.app-container {
+	display: flex;
 }
-.task-item{
-    text-decoration: line-through;
+
+.sidenav {
+	margin: 0em 2em;
+	flex-basis: 15%;
+	height: 90vh;
+	padding: 2em;
+	background-color: wheat;
+	border-radius: 15px;
+	ul {
+		list-style-type: none;
+	}
+
+	li {
+		padding: 1rem;
+		font-size: 1.5em;
+	}
+
+	a {
+		text-decoration: none;
+		color: white;
+	}
+
+	a:hover {
+		color: pink;
+	}
+}
+
+.sidenav ul li {
+	text-decoration: none;
+}
+
+.content {
+	&__child-app {
+		flex-basis: 85%;
+		text-align: center;
+		height: 90vh;
+		background-color: tomato;
+		padding: 2em;
+		border-radius: 15px;
+	}
 }

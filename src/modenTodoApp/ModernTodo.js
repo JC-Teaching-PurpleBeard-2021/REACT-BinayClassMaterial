@@ -20,7 +20,8 @@ const ModernTodo = () => {
 		else setdoneCounter(doneCounter - 1);
 	};
 	return (
-		<div>
+		<div className='content__child-app'>
+			<h1>Feature Rich ToDo App</h1>
 			ToDo App:
 			<form onSubmit={handleOnSubmit}>
 				<input type='text' value={currentTask} onChange={handleOnChange}></input>
