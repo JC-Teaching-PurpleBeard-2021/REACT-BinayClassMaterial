@@ -22,6 +22,9 @@ const SideNav = () => {
 				<li>
 					<Link to='/employeeform'>Table Application</Link>
 				</li>
+				<li>
+					<Link to='/covid'>Covid Tracker</Link>
+				</li>
 			</ul>
 		</nav>
 	);

@@ -8,6 +8,7 @@ import Theme from './themeapp/Theme';
 import ModernTodo from './modenTodoApp/ModernTodo';
 import SideNav from './common/SideNav';
 import Home from './common/Home';
+import Covid from './covidTracker/covid';
 
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 
@@ -69,6 +70,10 @@ class App extends Component {
 					<Route path='/employeeform'>
 						<Table td={this.state.tableData} handleDeleteOnClick={this.handleDeleteOnClick} />
 						<AddEmployeeForm handleFormOnSubmit={this.handleFormOnSubmit} />
+					</Route>
+
+					<Route path='/covid'>
+						<Covid />
 					</Route>
 				</div>
 			</Router>
